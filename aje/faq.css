@@ -1,0 +1,68 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #020f21;
+    scroll-behavior: smooth;
+    color: #fff; 
+    padding: 0px;
+   
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#storeIcons{
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+    padding: 15px;
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+}
+
+h5{
+    color: rgb(133, 213, 237);
+    font-weight: bold;
+    /* font-size: 20px;
+    padding: 0px 10px; */
+}
+/* p{
+    padding: 0px 10px;
+}
+
+.trades{
+    outline: 1px solid white;
+}
+
+.form-control{
+    width: 90%;
+    height: 30px;
+    border-radius: 7px;
+    margin: 20px 20px;
+    outline: none;
+    box-shadow: none;
+}
+
+    
+.btn{
+    font-family: "EB Garamond", sans-serif;
+    background-color: #fff;
+    border: none;
+    width: 105px;
+    height: 35px;
+    border-radius: 6px;
+    color: #0062b8 !important;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0px 10px;
+} */
