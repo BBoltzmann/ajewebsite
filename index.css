@@ -1,6 +1,7 @@
-    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("css/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
     a:link,
     a:visited {
@@ -382,7 +383,7 @@
             justify-content: center;
             gap: 10px;
         }
-} 
+    }
     /** Small screens, laptops  1024px  **/
     /** Desktops, large screens  1200px  **/
 
