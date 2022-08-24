@@ -18,21 +18,24 @@ a:visited {
 }
 
  body {
-    background-color: #031939;
+    background-color: #020f20;
 }
 
-nav{
-    background-color: transparent;
+header {
+    background: linear-gradient(to right, transparent 0%, transparent 50%, #05152c 50%, #05152c 100%) !important;
+    height: 90vh;
 }
 
 ul{
-    list-style-type: none;
+        list-style-type: none;
+}
+
+.navbar{
     font-weight: 700;
-   
 }
 
 .navbar li{
-    padding: 0px 35px;
+    padding: 0px 30px;
 }
 
 /* .navbar > li.active{
@@ -64,5 +67,37 @@ ul{
 
 .image-fluid {
     width: 100%;
-    height: auto;
+}
+
+.image2 {
+    width: 100%;
+}
+
+@media (max-width: 762px) {
+
+    body {
+        text-align: center;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .navbar {
+        display: none !important;
+    }
+
+    .btn-move, .store-icons {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .col {
+        flex: none;
+    }
+
+        .image2 {
+           display: none;
+        }
 }
