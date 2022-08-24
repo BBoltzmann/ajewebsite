@@ -100,4 +100,17 @@ ul{
         .image2 {
            display: none;
         }
+
+                .Navbar__ToggleShow {
+                    display: flex;
+                }
+        
+                .nav__link-toggle {
+                    /* align-self: flex-end;
+            display: initial;
+            position: absolute; */
+                    cursor: pointer;
+                }
 }
+
+
