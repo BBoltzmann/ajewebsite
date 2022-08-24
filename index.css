@@ -1,7 +1,14 @@
-@import url("css/style.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    }
 
 a:link,
 a:visited {
@@ -10,573 +17,52 @@ a:visited {
     cursor: auto;
 }
 
-body {
-    margin: 0;
-
+ body {
+    background-color: #031939;
 }
 
-/** Mobile devices 480px  **/
-
-@media (min-width: 375px) {
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: #020f21;
-        scroll-behavior: smooth;
-        color: #fff;
-        width: 375px;
-        margin: 0px 20px;
-        padding: 0px;
-    }
-
-    .grid-container-0 {
-        background-color: #020f21;
-        width: 100%;
-        position: fixed;
-        z-index: 3;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    .grid-container-0 ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        overflow: hidden;
-    }
-
-    .grid-container-0 ul a {
-        display: block;
-        /* outline: 1px solid white; */
-        padding: 5px 40px;
-        font-size: 18px;
-        font-weight: 800;
-        /* border-right: 1px solid white; */
-    }
-
-    .grid-container-0 ul a:hover {
-        background-color: #031939;
-        ;
-    }
-
-    .grid-container-0 .logo {
-        float: left;
-        display: block;
-        cursor: pointer;
-    }
-
-    .grid-container-0 .navBar {
-        clear: both;
-        max-height: 0;
-        transition: max-height .2s ease-out;
-    }
-
-    .grid-container-0 .hamburger {
-        padding: 25px 25px;
-        position: relative;
-        float: right;
-        margin-right: 200px;
-        cursor: pointer;
-    }
-
-    .grid-container-0 .hamburger .navIcon {
-        display: block;
-        background-color: white;
-        height: 2px;
-        width: 25px;
-        position: relative;
-        transition: background .2s ease-out;
-    }
-
-    .grid-container-0 .hamburger .navIcon {
-        display: block;
-        background-color: white;
-        height: 2px;
-        width: 25px;
-        position: relative;
-        transition: background .2s ease-out;
-    }
-
-    .grid-container-0 .hamburger .navIcon:before {
-        background-color: white;
-        content: '';
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        transition: all .2s ease-out;
-        top: 10px;
-    }
-
-    .grid-container-0 .hamburger .navIcon::after {
-        background-color: white;
-        content: '';
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        transition: all .2s ease-out;
-        top: -10px;
-    }
-
-    .grid-container-0 .menu-btn {
-        display: none;
-    }
-
-    .grid-container-0 .menu-btn:checked~.navBar {
-        max-height: 240px;
-    }
-
-    .grid-container-0 .menu-btn:checked~.hamburger .navIcon {
-        background: transparent;
-    }
-
-    .grid-container-0 .menu-btn:checked~.hamburger .navIcon:before {
-        transform: rotate(-45deg);
-        top: 0;
-    }
-
-    .grid-container-0 .menu-btn:checked~.hamburger .navIcon:after {
-        transform: rotate(45deg);
-        top: 0;
-    }
-
-    #header1 {
-        text-align: center;
-        font-weight: bolder;
-    }
-
-    #header2 {
-        text-align: center;
-    }
-
-    #paragraph1 {
-        text-align: center;
-        padding: 0px 10px;
-
-    }
-
-    .btn2 {
-        font-family: "EB Garamond", sans-serif;
-        background-color: #fff;
-        border: none;
-        width: 105px;
-        height: 35px;
-        border-radius: 6px;
-        color: #0062b8 !important;
-        font-weight: bold;
-        font-size: 12px;
-        cursor: pointer;
-    }
-
-    .grid-item-1-container img {
-        width: 375px;
-        height: 310px;
-        padding: 30px 0px;
-    }
-
-    #image2 img {
-        width: 500px;
-        padding: 30px 0px;
-    }
-
-    #sizer {
-        width: 90%;
-        margin: auto;
-    }
-
-    .carousel-control-next {
-        display: none;
-    }
-
-    .carousel-control-prev {
-        display: none;
-    }
-
-    .grid-item-4 img {
-        display: none;
-    }
-
-    #item5 {
-        text-align: center;
-        padding: 0px;
-    }
-
-    #item5 h5 {
-        font-size: 26px;
-        padding: 10px;
-        margin: 0px;
-    }
-
-    #item5 p {
-        padding: 0px;
-    }
-
-    #storeIcons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 0px;
-    }
-
-    #googlePlayIcon i {
-        font-size: 40px;
-    }
-
-    #appleStoreIcon i {
-        font-size: 40px;
-    }
-
-    #storeIcons i {
-        font-size: 40px;
-    }
+nav{
+    background-color: transparent;
 }
 
-/** iPads, Tablets 768px  **/
-@media (min-width: 768px) {
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: #020f21;
-        scroll-behavior: smooth;
-        color: #fff;
-        display: inline;
-    }
-
-    #text {
-        color: aliceblue;
-    }
-
-    .grid-container-0 li {
-        float: left;
-    }
-
-    .grid-container-0 li a {
-        padding: 20px 30px;
-    }
-
-    .grid-container-0 .navBar {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    #navbar {
-        display: flex;
-        gap: 100px;
-        font-size: 24px;
-        /* flex-wrap: wrap; */
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    #header1 {
-        margin: 200px 20px 20px 40px;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.08;
-        letter-spacing: normal;
-        text-align: left;
-        padding: 0;
-    }
-
-    #paragraph1 {
-        margin: 10px 20px 20px 30px;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.65;
-        letter-spacing: normal;
-        text-align: left;
-    }
-
-    #header2 {
-        margin: 10px 20px 20px 40px;
-
-        text-align: left
-    }
-
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #fff;
-        text-decoration: underline;
-    }
-
-    .btn2 {
-        font-family: "EB Garamond", sans-serif;
-        background-color: #fff;
-        border: none;
-        width: 105px;
-        height: 35px;
-        border-radius: 6px;
-        color: #0062b8 !important;
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    .btn2:hover {
-        font-family: "EB Garamond", sans-serif;
-        background-color: transparent;
-        border: 1px solid #fff;
-        width: 105px;
-        height: 35px;
-        border-radius: 6px;
-        color: #fff !important;
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-
-    }
-
-    .grid-item-1-container img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .grid-item-1 {
-        background-color: #031939;
-
-    }
-
-    .grid-item-3 {
-        width: 90%;
-        margin: 0px 80px;
-    }
-
-    .grid-item-1-image {
-        /* padding: 10px; */
-        height: 600px;
-        width: 500;
-    }
-
-    #image2 img {
-        width: 800px;
-        height: auto;
-    }
-
-    #caroselControl {
-        display: flex;
-        margin: 0px 0px 0px 150px;
-    }
-
-    #cursor1 {
-        width: 32px;
-        height: 13px;
-        margin: 0 16px 0 0;
-        background-color: #fff;
-    }
-
-    #cursor2 {
-        width: 13px;
-        height: 13px;
-        margin: 0 17px 0 17px;
-        opacity: 0.3;
-        background-color: #fff;
-    }
-
-    .grid-item-4 img {
-        display: block;
-    }
-
-    #item5 {
-        display: flex;
-    }
-
-    #column1 {
-        flex: 1;
-    }
-
-    #storeIcons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
+ul{
+    list-style-type: none;
+    font-weight: 700;
+   
 }
 
-/** Small screens, laptops  1024px  **/
-/** Desktops, large screens  1200px  **/
-
-@media (min-width: 1150px) {
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: #020f21;
-        scroll-behavior: smooth;
-        color: #fff;
-        display: inline;
-    }
-
-    #text {
-        color: aliceblue;
-    }
-
-    .grid-container-0 li {
-        float: left;
-    }
-
-    .grid-container-0 li a {
-        padding: 20px 30px;
-    }
-
-    .grid-container-0 .navBar {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    #navbar {
-        display: flex;
-        gap: 100px;
-        font-size: 24px;
-        /* flex-wrap: wrap; */
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    #header1 {
-        margin: 200px 20px 20px 40px;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.08;
-        letter-spacing: normal;
-        text-align: left;
-        padding: 0;
-    }
-
-    #paragraph1 {
-        margin: 10px 20px 20px 30px;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.65;
-        letter-spacing: normal;
-        text-align: left;
-    }
-
-    #header2 {
-        margin: 10px 20px 20px 40px;
-
-        text-align: left
-    }
-
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #fff;
-        text-decoration: underline;
-    }
-
-    .btn2 {
-        font-family: "EB Garamond", sans-serif;
-        background-color: #fff;
-        border: none;
-        width: 105px;
-        height: 35px;
-        border-radius: 6px;
-        color: #0062b8 !important;
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    .btn2:hover {
-        font-family: "EB Garamond", sans-serif;
-        background-color: transparent;
-        border: 1px solid #fff;
-        width: 105px;
-        height: 35px;
-        border-radius: 6px;
-        color: #fff !important;
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        /* grid-auto-columns: 60% 40%; */
-        /* grid-template-rows: 700px 500px 300px; */
-    }
-
-    .grid-item-1-container img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .grid-item-1 {
-        background-color: #031939;
-
-    }
-
-    .grid-item-2 {
-        grid-column: span 1;
-    }
-
-    .grid-item-3 {
-        width: 70%;
-        margin: 30px 80px;
-    }
-
-    .grid-item-1-image {
-        /* padding: 10px; */
-        height: 600px;
-        width: 500;
-    }
-
-    #image2 img {
-        width: 1000px;
-        height: auto;
-    }
-
-    #caroselControl {
-        display: flex;
-        margin: 0px 0px 0px 150px;
-    }
-
-    #cursor1 {
-        width: 32px;
-        height: 13px;
-        margin: 0 16px 0 0;
-        background-color: #fff;
-    }
-
-    #cursor2 {
-        width: 13px;
-        height: 13px;
-        margin: 0 17px 0 17px;
-        opacity: 0.3;
-        background-color: #fff;
-    }
-
-    .grid-item-4 img {
-        display: block;
-    }
-
-    #item5 {
-        display: flex;
-    }
-
-    #column1 {
-        flex: 1;
-    }
-
-    #storeIcons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
+.navbar li{
+    padding: 0px 35px;
 }
 
-/** For Projectors or Higher Resolution Screens (Full HD)**/
+/* .navbar > li.active{
+    border-bottom: white 4px solid;
+    width: 5px !important;
+} */
 
-/** For 4K Displays (Ultra HD)**/
+.navbar li a{
+    cursor: pointer;
+}
+
+.btn-1{
+    background-color: #2662b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px  ;
+    cursor: pointer;
+}
+
+.btn-2 {
+    background-color: white;
+    color: #2662b1;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.image-fluid {
+    width: 100%;
+    height: auto;
+}
