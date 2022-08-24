@@ -100,17 +100,23 @@ ul{
         .image2 {
            display: none;
         }
-
-                .Navbar__ToggleShow {
-                    display: flex;
-                }
-        
-                .nav__link-toggle {
-                    /* align-self: flex-end;
-            display: initial;
-            position: absolute; */
-                    cursor: pointer;
-                }
 }
 
+.waiting-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
 
+.form-case{ 
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    width: 40%;
+    border: 1px solid white;
+    background-color: transparent;
+}
