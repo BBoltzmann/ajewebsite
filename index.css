@@ -120,3 +120,7 @@ display: flex;
     border: 1px solid white;
     background-color: transparent;
 }
+
+.fa-youtube{
+    font-size: 28px !important;
+}
