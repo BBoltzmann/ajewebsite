@@ -16,6 +16,20 @@
       src="https://kit.fontawesome.com/aa852b7a83.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+
+        $("#closeModal").click(function () {
+          $("#myModal").modal("hide");
+        });
+      });
+    </script>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <!--KEYSWORDS-->
 
@@ -43,6 +57,38 @@
   </head>
 
   <body>
+    <!-- modal  -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <div class="d-flex justify-content-between pl-4">
+              <div>
+              </div>
+            </div>
+          </div> -->
+          <div class="modal-body py-5 p-4">
+            <h5 class="modal-title text-white">Tribute to our loving Dad</h5>
+           
+            <hr>
+            <p class="text-white">
+              Subscribe to our mailing list to get the latest updates straight
+              in your inbox.
+            </p>
+
+            <hr>
+            <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary me-2" id="closeModal">Close</button>
+           <a href="/tribute.html">
+            <button type="submit" class="btn btn-primary">Add Tribute</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end  -->
+
     <header>
       <div class="container">
         <nav class="nav d-flex justify-content-between py-3">
@@ -199,33 +245,39 @@
     </section>
 
     <section class="py-5 text-center">
-        <h1 class="fw-bolder py-3">How it works</h1>
-        <div class="row d-flex justify-content-center gap-2">
+      <h1 class="fw-bolder py-3">How it works</h1>
+      <div class="row d-flex justify-content-center gap-2">
         <div class="col-md-3">
-            <iframe  height="560"
+          <iframe
+            height="560"
             src="https://youtube.com/embed/Jj_LIl7SI0w?feature=shared"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="col-md-3">
-            <iframe  height="560"
+          <iframe
+            height="560"
             src="https://youtube.com/embed/bdZ1m5is0mk?si=VXZzKlZPekMEfomq"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="col-md-3">
-            <iframe  height="560"
+          <iframe
+            height="560"
             src="https://youtube.com/embed/p9o-es1PqLk?feature=shared"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            allowfullscreen
+          ></iframe>
         </div>
-        </div>
+      </div>
     </section>
 
     <section class="pt-lg-3">
@@ -295,7 +347,7 @@
                 </div>
                 <div id="youtube">
                   <a href="https://youtu.be/WJRng8DqW0s?si=npmbZC4n7LDHjpmb ">
-                  <i class="fab fa-youtube fs-5 ms-2"></i>
+                    <i class="fab fa-youtube fs-5 ms-2"></i>
                   </a>
                 </div>
               </div>

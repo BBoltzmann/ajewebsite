@@ -124,3 +124,11 @@ display: flex;
 .fa-youtube{
     font-size: 28px !important;
 }
+
+.modal-content{
+    background-color: #05152c;
+}
+
+.card{
+    background-color: #05152c;
+}
