@@ -14,15 +14,15 @@ a:link,
 a:visited {
     color: white;
     text-decoration: none;
-    cursor: auto;
+    /* cursor: auto; */
 }
 
- body {
+body {
     background-color: #020f20;
 }
 
 header {
-    background: linear-gradient(to right, transparent 0%, transparent 50%, #05152c 50%, #05152c 100%) !important;
+    background-color: #05152c;
     height: 90vh;
 }
 
@@ -83,10 +83,6 @@ ul{
         height: auto;
     }
 
-    .navbar {
-        display: none !important;
-    }
-
     .btn-move, .store-icons {
         display: flex !important;
         justify-content: center !important;
@@ -109,7 +105,7 @@ ul{
     height: 70vh;
 }
 
-.form-case{ 
+.form-case{
 display: flex;
     justify-content: center;
     align-items: center;

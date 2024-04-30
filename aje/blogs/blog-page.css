@@ -1,0 +1,23 @@
+header {
+  height: fit-content;
+}
+
+.container.blog-container {
+  max-width: 900px;
+}
+
+nav.nav {
+  align-items: center;
+}
+
+ul.navbar {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: auto;
+  max-width: 80%;
+  max-height: 80vh;
+  margin: 1rem auto;
+}
