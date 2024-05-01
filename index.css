@@ -128,3 +128,9 @@ display: flex;
 .card{
     background-color: #05152c;
 }
+
+aside {
+    background-color: #FFFFFF22;
+    border-radius: 10px;
+    padding: 1rem;
+}
