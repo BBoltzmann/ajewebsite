@@ -1,0 +1,59 @@
+/* Global */
+.hero-section {
+
+}
+
+.hero-section h1 {
+  margin-bottom: 4rem;
+}
+
+.hero-section p,
+.subheading {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.paragraph-outline {
+  height: 100%;
+  background: linear-gradient(transparent 25%, #fff 25%, #fff 75%, transparent 75%, transparent 100%);
+  background-size: 100% 20%;
+}
+
+/* Blog Card */
+.blog-card-container {
+  display: block;
+  height: 100%;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 100%;
+}
+
+.blog-card-title {
+  font-weight: bold;
+}
+
+.blog-breif {
+  margin-bottom: 0.5rem;
+}
+
+.blog-author, .blog-last-updated{
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-author::before {
+  content: "Author: ";
+}
+
+.blog-last-updated::before {
+  content: "Last Updated: ";
+}
