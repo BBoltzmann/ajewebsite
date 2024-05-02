@@ -1,6 +1,7 @@
 /* Global */
-.hero-section {
-
+header {
+  min-height: 0;
+  height: auto;
 }
 
 .hero-section h1 {
