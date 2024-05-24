@@ -34,43 +34,54 @@
 
 <body>
   <header>
-    <div class="container">
-      <nav class="nav d-flex justify-content-between py-3">
-        <div>
-          <a href="/index.html"><img src="/images/logo.png" class="logo" height="50" width="100" /></a>
+    <nav class="navbar navbar-expand-lg justify-content-between py-3">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="/index.html">
+            <img src="/images/logo.png" class="logo" height="50" width="100" />
+          </a>
         </div>
-        <div>
-          <!-- <button onclick="myFunc()" ><i class="fa-solid fa-bars"></i></button> -->
-          <ul class="navbar d-none d-lg-flex">
-            <li class="active"><a href="/index.html">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="/aje/blogs">Blogs</a></li>
-            <li><a href="/aje/faq.html">FAQs</a></li>
-            <li><a href="#footer" class="btn btn-1">Contact</a></li>
-          </ul>
 
-          <div class="checked d-lg-none d-md-none">
-            <li><a href="#" class="btn btn-1">Trade</a></li>
+        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="btn btn-1"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="active">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aje/blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aje/faq.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="btn btn-1">Contact</a>
+            </li>
+          </ul>
+          <div class="checked d-lg-none">
+            <a href="#" class="btn btn-1">Trade</a>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
     <section>
-      <div class="container">
-        <div class="row d-lg-flex">
-          <div class="col mt-5 pt-lg-4">
+      <div class="container pb-5">
+        <div class="row align-items-center">
+          <div class="col-lg mt-5 mt-lg-0 pt-lg-4">
             <div class="p-1">
-              <h1 class="fw-bolder">The social market</h1>
+              <h1 class="fw-bolder">The Social Market: Connect, Bargain, Pay</h1>
               <p>
-                Enter the market to see goods and services, bargain for
-                convinent prices and make payment in your preferred currency
-                all in just one click. We help you connect with potential
-                customers who are around you and ready to pay for goods or
-                services. Connect by adding a post of your trade. This Product
-                lets you own a wallet with which you can make and receive
-                payments. Our wallet helps you convert payments to and from
-                your local currency.
+                Discover and post goods and services, bargain for the best prices, and make payments in your preferred
+                currency—all in just one click. Whether you're buying or selling, connect with local users ready to
+                trade. Use our wallet to make and receive payments seamlessly, converting them to and from your local
+                currency.
               </p>
 
               <form class="my-4 subscription-form">
@@ -93,26 +104,49 @@
                     Email
                   </label>
                   <input class="flex-grow-1 border-0" id="subscription-email" type="text"
-                    placeholder="email@example.com">
+                         placeholder="email@example.com">
                 </div>
                 <div class="d-flex mt-4 gap-2">
                   <button class="btn btn-1 flex-grow-1">Sign up for our newsletter</button>
                   <div class="btn-move">
-                    <a href="https://link-to.app/AjeGeo"><button type="button" class="btn btn-2">Download
-                        App</button></a>
+                    <button id="download-btn" type="button" class="btn btn-2">
+                      Download App
+                    </button>
                   </div>
                 </div>
               </form>
 
             </div>
           </div>
-          <div class="col grid-item-1-image">
+          <div class="col-lg grid-item-1-image h-auto">
             <img src="images/grid-item-1-image.png" class="image-fluid" />
           </div>
         </div>
       </div>
     </section>
   </header>
+
+  <!-- Start modal -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <p class="text-white">
+            Notice: For mobile users only. This button will connect to the App Store or Play Store. On a PC or Mac, it
+            will refresh the page.
+          </p>
+          <hr>
+          <div class="d-flex justify-content-center gap-3">
+            <button id="closeModal" class="btn btn-1">Close</button>
+            <a href="https://link-to.app/AjeGeo">
+              <button class="btn btn-2">Continue</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal end  -->
 
   <section id="features" class="my-3">
     <div class="container">
@@ -199,18 +233,18 @@
   <section class="py-5 text-center container-fluid">
     <h1 class="fw-bolder py-3">How it works</h1>
     <div class="row d-flex justify-content-center gap-2">
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <iframe height="560" src="https://youtube.com/embed/Jj_LIl7SI0w?feature=shared" title="YouTube video player"
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <iframe height="560" src="https://youtube.com/embed/bdZ1m5is0mk?si=VXZzKlZPekMEfomq"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <iframe height="560" src="https://youtube.com/embed/p9o-es1PqLk?feature=shared" title="YouTube video player"
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
@@ -221,7 +255,7 @@
   <section class="pt-lg-3">
     <div class="container">
       <footer id="footer" class="py-3 text-white">
-        <div class="row row-cols-1 row-cols-md-4 g-3">
+        <div class="row row-cols-1 row-cols-lg-4 g-3">
           <div class="col">
             <div>
               <img src="/images/ajeElevatedLogoWhite1024.png" class="" />
@@ -308,8 +342,18 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+
+  <script>
+    $('#download-btn').click(function () {
+      $("#myModal").modal("show");
+
+      $("#closeModal").click(function () {
+        $("#myModal").modal("hide");
+      });
+    });
+  </script>
 </body>
 
 </html>
