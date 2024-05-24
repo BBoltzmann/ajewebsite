@@ -30,11 +30,11 @@ ul {
     list-style-type: none;
 }
 
-.navbar {
+.navbar-nav {
     font-weight: 700;
 }
 
-.navbar li {
+.navbar-nav li {
     padding: 0px 30px;
 }
 
@@ -43,7 +43,7 @@ ul {
     width: 5px !important;
 } */
 
-.navbar li a {
+.navbar-nav li a {
     cursor: pointer;
 }
 
