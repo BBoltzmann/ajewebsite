@@ -122,10 +122,19 @@ aside {
 
 .subscription-form .form-field input{
     display: block;
+    color: black;
     padding: 0.5rem;
     width: 100%;
     border-radius: 0.5rem;
     border: 0;
+}
+
+.toast-container, .toast {
+    z-index: 99999;
+}
+
+.toast * {
+    color: black;
 }
 
 .grid-item-1-image {
