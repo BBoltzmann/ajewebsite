@@ -27,8 +27,8 @@ function formDataToJson(formData) {
 document.getElementById('subscription-form').addEventListener('submit', async (e) => {
   e.preventDefault()
   const formData = new FormData(e.target);
-  console.log(e.target)
-  console.log('formData:', formDataToJson(formData))
+  //console.log(e.target)
+  //console.log('formData:', formDataToJson(formData))
 
   // Send subscription request to server
   const response = await fetch('http://localhost:8888/users/signup', {
@@ -43,16 +43,13 @@ document.getElementById('subscription-form').addEventListener('submit', async (e
   })
 
   if (typeof(response.ok) === "boolean" && response.ok) {
-    console.log("response", response)
-    const responseData = await response.text().then(text =>{
-      console.log('text:', text)
-      return text;
-    }).catch(error => {
-      console.log('response.text() error:', error)
+    //console.log("response", response)
+    const responseData = await response.text().catch(error => {
+      //console.log('response.text() error:', error)
       return error;
     });
 
-    console.log('responseData:', responseData)
+    //console.log('responseData:', responseData)
 
     if (responseData === 'done') {
       showSuccessToast(responseData);
